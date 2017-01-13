@@ -1,0 +1,33 @@
+﻿{
+  "status": "successful",
+  "message": null,
+  "code": null,
+  "results": {
+    "whitepages_pro_phone_rep": {
+      "request_sid": "XRxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "status": "successful",
+      "message": null,
+      "code": null,
+      "result": {
+        "results": [
+          {
+            "phone_number": "2095551212",
+            "reputation": {
+              "level": 1,
+              "details": [
+                {
+                  "score": 2,
+                  "type": "NotApplicable",
+                  "category": "NotApplicable"
+                }
+              ],
+              "volume_score": 1,
+              "report_count": 0
+            }
+          }
+        ],
+        "messages": [ ]
+      }
+    }
+  }
+}
