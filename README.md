@@ -6,7 +6,8 @@
 [![Build
 Status](https://travis-ci.org/TwilioDevEd/block-spam-calls-python.svg?branch=master)](https://travis-ci.org/TwilioDevEd/block-spam-calls-python)
 
-Learn how to use Twilio add-ons to block spam calls.
+Learn how to use Twilio add-ons to block spam calls. Learn more about what's needed from this 
+[Twilio guide](https://www.twilio.com/docs/guides/block-spam-calls-and-robocalls-python).
 
 ## Local development
 
@@ -16,8 +17,7 @@ To run the app locally, clone this repository and `cd` into its directory:
 
 1. First clone this repository and `cd` into its directory:
    ```
-   git clone git@github.com:TwilioDevEd/block-spam-calls-python.git
-
+   git clone https://github.com/TwilioDevEd/block-spam-calls-python.git
    cd block-spam-calls-python
    ```
 
@@ -36,9 +36,9 @@ To run the app locally, clone this repository and `cd` into its directory:
 
 1. Run the application.
 
-  ```
-  $ python block_spam_calls/app.py
-  ```
+    ```
+    python block_spam_calls/app.py
+    ```
 
 To actually forward incoming calls, your development server will need to be publicly accessible. [We recommend using ngrok to solve this problem](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html).
 
@@ -47,10 +47,6 @@ Once you have started ngrok, update your TwiML app's voice URL setting to use yo
 ```
 http://88b37ada.ngrok.io/
 ```
-
-1. Check it out at [http://localhost:5000](http://localhost:5000)
-
-That's it
 
 ## Run the tests
 
