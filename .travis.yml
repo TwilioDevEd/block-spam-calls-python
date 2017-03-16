@@ -3,5 +3,5 @@ python:
   - '3.6'
 install:
   - pip install -r requirements.txt
-script: python block_spam_calls/block_spam_calls_tests.py
+script: python test.py
 after_success:
