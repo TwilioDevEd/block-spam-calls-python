@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from flask import Flask, request
-import twilio.twiml
+from twilio.twiml.voice_response import VoiceResponse
 import json
 
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=['POST'])
 def block_spam_calls():
-    resp = twilio.twiml.Response()
+    resp = VoiceResponse()
     block_call = False
 
     blocker_addons = {
