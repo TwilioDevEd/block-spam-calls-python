@@ -1,33 +1,29 @@
-﻿{
-  "status": "successful",
-  "message": null,
-  "code": null,
-  "results": {
-    "whitepages_pro_phone_rep": {
-      "request_sid": "XRxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "status": "successful",
-      "message": null,
-      "code": null,
-      "result": {
-        "results": [
-          {
-            "phone_number": "2095551212",
-            "reputation": {
-              "level": 4,
-              "details": [
-                {
-                  "score": 2,
-                  "type": "NotApplicable",
-                  "category": "NotApplicable"
-                }
-              ],
-              "volume_score": 1,
-              "report_count": 0
-            }
-          }
-        ],
-        "messages": [ ]
+{
+   "status":"successful",
+   "message":null,
+   "code":null,
+   "results":{
+      "whitepages_pro_phone_rep":{
+         "code":null,
+         "message":null,
+         "request_sid":"XR63dbb880c4fcd054a810f603f304bd31",
+         "result":{
+            "error":null,
+            "id":"Phone.4d796fef-a2df-4b08-cfe3-bc7128b6f6bb.Durable",
+            "phone_number":"2069735100",
+            "report_count":1,
+            "reputation_details":{
+               "score":2,
+               "type":"NotApplicable",
+               "category":"NotApplicable"
+            },
+            "reputation_level":4,
+            "volume_score":1,
+            "warnings":[
+
+            ]
+         },
+         "status":"successful"
       }
-    }
-  }
+   }
 }

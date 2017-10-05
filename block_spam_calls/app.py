@@ -44,13 +44,7 @@ def should_be_blocked_by_nomorobo(nomorobo_spamscore):
 def should_be_blocked_by_whitepages(whitepages):
     if whitepages.get('status') != 'successful':
         return False
-
-    results = whitepages.get('result', {}).get('results', [])
-    for result in results:
-        if result.get('reputation', {}).get('level', 0) == 4:
-            return True
-
-    return False
+    return whitepages['result']['reputation_level'] >= 4
 
 
 def should_be_blocked_by_marchex(marchex):
