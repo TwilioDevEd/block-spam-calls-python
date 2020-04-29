@@ -3,8 +3,8 @@
 </a>
 
 # Block Spam Calls. Powered by Twilio - Python/Flask
-[![Build
-Status](https://travis-ci.org/TwilioDevEd/block-spam-calls-python.svg?branch=master)](https://travis-ci.org/TwilioDevEd/block-spam-calls-python)
+
+![](https://github.com/TwilioDevEd/block-spam-calls-python/workflows/Flask/badge.svg)
 
 > We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
 
@@ -13,7 +13,7 @@ Learn how to use Twilio add-ons to block spam calls. Learn more about what's nee
 
 ## Local development
 
-First you need to have [python](https://www.python-lang.org/), [virtualenv](https://virtualenv.pypa.io) and [pip](https://pip.pypa.io/) installed on your system.
+First you need to have [python](https://www.python.org/), [virtualenv](https://virtualenv.pypa.io) and [pip](https://pip.pypa.io/) installed on your system.
 
 To run the app locally, clone this repository and `cd` into its directory:
 
@@ -61,5 +61,6 @@ python test.py
 ## Meta
 
 * No warranty expressed or implied. Software is as is. Diggity.
+* The CodeExchange repository can be found [here](https://github.com/twilio-labs/code-exchange/).
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
