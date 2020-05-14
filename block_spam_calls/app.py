@@ -13,7 +13,7 @@ def block_spam_calls():
 
     blocker_addons = {
         "nomorobo_spamscore": should_be_blocked_by_nomorobo,
-        "whitepages_pro_phone_rep": should_be_blocked_by_whitepages,
+        "ekata_phone_valid": should_be_blocked_by_ekata,
         "marchex_cleancall": should_be_blocked_by_marchex
     }
 
@@ -41,10 +41,10 @@ def should_be_blocked_by_nomorobo(nomorobo_spamscore):
         return score == 1
 
 
-def should_be_blocked_by_whitepages(whitepages):
-    if whitepages.get('status') != 'successful':
+def should_be_blocked_by_ekata(ekata):
+    if ekata.get('status') != 'successful':
         return False
-    return whitepages['result']['reputation_level'] >= 4
+    return ekata['result']['reputation_level'] >= 4
 
 
 def should_be_blocked_by_marchex(marchex):

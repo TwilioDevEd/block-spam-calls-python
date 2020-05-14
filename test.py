@@ -40,13 +40,13 @@ class BlockSpamCalls(unittest.TestCase):
         result = self.app.post('/', data={'AddOns': add_ons})
         self.assertTrue(b'<Reject' in result.data)
 
-    def test_successful_with_whitepages(self):
-        add_ons = self.load_json_fixture('successful_whitepages.json')
+    def test_successful_with_ekata(self):
+        add_ons = self.load_json_fixture('successful_ekata.json')
         result = self.app.post('/', data={'AddOns': add_ons})
         self.assertFalse(b'<Reject' in result.data)
 
-    def test_blocked_with_whitepages(self):
-        add_ons = self.load_json_fixture('spam_whitepages.json')
+    def test_blocked_with_ekata(self):
+        add_ons = self.load_json_fixture('spam_ekata.json')
         result = self.app.post('/', data={'AddOns': add_ons})
         self.assertTrue(b'<Reject' in result.data)
 
