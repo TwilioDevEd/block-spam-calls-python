@@ -13,6 +13,12 @@
 Learn how to use Twilio add-ons to block spam calls. Learn more about what's needed from this 
 [Twilio guide](https://www.twilio.com/docs/guides/block-spam-calls-and-robocalls-python).
 
+Implementations in other languages:
+
+| .NET | Java | Ruby | PHP | Node |
+| :--- | :--- | :----- | :-- | :--- |
+| [Done](https://github.com/TwilioDevEd/block-spam-calls-csharp) | [Done](https://github.com/TwilioDevEd/block-spam-calls-java)  | [Done](https://github.com/TwilioDevEd/block-spam-calls-ruby)  | [Done](https://github.com/TwilioDevEd/block-spam-calls-php) | [Done](https://github.com/TwilioDevEd/block-spam-calls-node)  |
+
 ## Set up
 
 ### Requirements
