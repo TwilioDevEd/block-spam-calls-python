@@ -8,10 +8,11 @@ else
 endif
 install: venv
 ifeq ($(UNAME), Windows)
-	venv\Scripts\activate.bat;
-else
-	. venv/bin/activate;
-endif
+	venv\Scripts\activate.bat; \
 	pip3 install -r requirements.txt;
+else
+	. venv/bin/activate; \
+	pip3 install -r requirements.txt;
+endif
 serve:
 	python3 block_spam_calls/app.py
