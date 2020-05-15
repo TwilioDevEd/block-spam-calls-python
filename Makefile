@@ -1,9 +1,11 @@
 .PHONY: venv install
 UNAME := $(shell uname)
 venv:
-	python -m venv venv
+ifeq ($(UNAME), Darwin)
+	python3 -m venv venv
+endif
 
-install:
+install: venv
 ifeq ($(UNAME), Windows)
 	py -3 -m venv venv; venv\Scripts\activate.bat;
 endif
@@ -11,7 +13,6 @@ ifeq ($(UNAME), Linux)
 	virtualenv venv; bash -c "source ./venv/bin/activate";
 endif
 ifeq ($(UNAME), Darwin)
-	venv
 	. venv/bin/activate;
 endif
 	pip3 install -r requirements.txt;
