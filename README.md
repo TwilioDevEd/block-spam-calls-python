@@ -61,7 +61,7 @@ Once you've selected the Add-on, just click on `Install` button. Then, you will 
     make install
     ```
 
-1. Run the application (will run on port 5000).
+1. Run the application (will run on port 5000). Before running the following command, make sure the virtual environment is activated.
 
     ```bash
     make serve
