@@ -55,29 +55,33 @@ Once you've selected the Add-on, just click on `Install` button. Then, you will 
    cd block-spam-calls-python
    ```
 
-1. Create the virtualenv, load it and install dependencies:
+2. Create the virtualenv, load it and install dependencies:
 
     ```bash
     make install
     ```
 
-1. Run the application (will run on port 5000). Before running the following command, make sure the virtual environment is activated.
+3. Run the application (will run on port 5000). Before running the following command, make sure the virtual environment is activated.
 
     ```bash
     make serve
     ```
 
-1. To actually forward incoming calls, your development server will need to be publicly accessible. [We recommend using ngrok to solve this problem](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html).
+4. To actually forward incoming calls, your development server will need to be publicly accessible. [We recommend using ngrok to solve this problem](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html).
 
     ```bash
     ngrok http 5000
     ```
 
-1. Once you have started ngrok, update your [TwiML app's](https://www.twilio.com/console/voice/twiml/apps) Voice URL setting to use your ngrok hostname, so it will look something like this:
+5. Once you have started ngrok, update your [TwiML app's](https://www.twilio.com/console/voice/twiml/apps) Voice URL setting to use your ngrok hostname, so it will look something like this:
 
     ```bash
     http://88b37ada.ngrok.io/
     ```
+
+    Finally, click on `Call` to test your application. See [Create a TwiML App](#create-a-twiml-app) to set the Voice URL.
+
+    ![](images/create-twiml-call-button.png)
 
 That's it!
 
