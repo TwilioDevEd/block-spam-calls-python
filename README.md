@@ -85,6 +85,14 @@ Once you've selected the Add-on, just click on `Install` button. Then, you will 
 
 That's it!
 
+### Docker
+
+If you have [Docker](https://www.docker.com/) already installed on your machine, you can use our `docker-compose.yml` to setup your project.
+
+1. Make sure you have the project cloned.
+2. Run `docker-compose up`.
+3. Follow the steps in [Local Development](#local-development) on how to expose your port to Twilio using a tool like [ngrok](https://ngrok.com/) and configure the remaining parts of your application.
+
 ### Tests
 
 You can run the tests locally by typing

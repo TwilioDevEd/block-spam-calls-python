@@ -56,4 +56,4 @@ def should_be_blocked_by_marchex(marchex):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
